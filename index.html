@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FP&A Analyst · Mining & Energy | Sagan Shortlist</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #0d2942;
+  --primary-light: #1c3d5e;
+  --accent: #14b8a6;
+  --accent-dim: #0d8e7f;
+  --warm: #f6f7f9;
+  --warm-dark: #e6e9ee;
+  --surface: #ffffff;
+  --surface-alt: #f6f7f9;
+  --border: #dfe3eb;
+  --text: #0d2942;
+  --text-muted: #64748b;
+  --gold: #d4a017;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--warm);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+/* ── Hero ── */
+.hero {
+  background: var(--primary);
+  border-radius: 16px;
+  padding: 40px 44px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  background: var(--accent);
+  opacity: 0.10;
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  opacity: 0.06;
+  border-radius: 50%;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+.brand-line .divider { opacity: 0.3; }
+
+.hero-badge {
+  background: rgba(20,184,166,0.22);
+  color: #5eead4;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.batch-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.batch-stamp .batch-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(20,184,166,0.2);
+}
+
+.hero-title {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-meta-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 600;
+}
+
+.hero-meta-value {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+/* ── Intro Block ── */
+.intro-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 36px;
+  margin-bottom: 28px;
+  border-left: 4px solid var(--accent);
+}
+
+.intro-block-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.intro-block-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+/* ── Comparison Table ── */
+.compare-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 36px;
+  margin-bottom: 28px;
+}
+
+.compare-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.compare-table th {
+  text-align: left;
+  padding: 12px 14px;
+  background: var(--warm);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border);
+}
+
+.compare-table th.lead { color: var(--accent); }
+
+.compare-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.compare-table tr:last-child td { border-bottom: none; }
+
+.compare-table td:first-child {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 13px;
+  width: 32%;
+}
+
+.check-mark { color: #10b981; font-weight: 700; }
+.x-mark { color: #ef4444; font-weight: 700; }
+.warn-mark { color: var(--gold); font-weight: 700; }
+
+/* ── Candidate Card ── */
+.candidate-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.candidate-header {
+  background: var(--primary);
+  padding: 32px 40px 28px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.candidate-header::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  opacity: 0.10;
+  border-radius: 50%;
+}
+
+.candidate-rank {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: var(--accent);
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.candidate-rank.lead {
+  background: var(--gold);
+  color: var(--primary);
+}
+
+.candidate-intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.candidate-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #5eead4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.candidate-name {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.candidate-title {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+
+.candidate-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.candidate-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+}
+
+.candidate-meta-item svg { opacity: 0.5; flex-shrink: 0; }
+.candidate-meta-value { color: white; font-weight: 600; }
+
+.candidate-body { padding: 0; }
+
+.section {
+  padding: 26px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-child { border-bottom: none; }
+
+.section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title svg { opacity: 0.4; }
+
+.narrative {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+}
+
+.why-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.why-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.fit-card {
+  background: var(--warm);
+  border: 1px solid var(--warm-dark);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.fit-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.fit-card-value {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.bars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+}
+
+.bar-item { display: flex; flex-direction: column; gap: 6px; }
+
+.bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-label { font-size: 13px; font-weight: 600; color: var(--text); }
+
+.bar-score {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.bar-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.tools-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-tag {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tool-tag.highlight {
+  background: rgba(20,184,166,0.10);
+  border-color: rgba(20,184,166,0.35);
+  color: var(--accent-dim);
+}
+
+/* ── Experience Timeline ── */
+.exp-list { display: flex; flex-direction: column; gap: 0; }
+
+.exp-item {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.exp-item:not(:last-child) { border-bottom: 1px solid #f3f4f6; }
+
+.exp-dot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.exp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+  flex-shrink: 0;
+}
+
+.exp-role { font-size: 14px; font-weight: 700; color: var(--text); }
+.exp-company { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.exp-desc { font-size: 13px; color: #6b7280; margin-top: 4px; line-height: 1.55; }
+
+.action-row {
+  display: flex;
+  gap: 12px;
+  padding: 22px 40px;
+  border-top: 1px solid var(--border);
+  background: var(--surface-alt);
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.action-btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.action-btn.primary:hover { background: var(--primary-light); }
+
+/* ── Card Recruiter Note ── */
+.card-note {
+  background: var(--surface-alt);
+  border-top: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  padding: 24px 40px;
+}
+
+.card-note-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card-note-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* ── Final Recruiter Note ── */
+.recruiter-note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 26px 32px;
+  margin-bottom: 28px;
+}
+
+.recruiter-note-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.recruiter-note-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: white;
+}
+
+.recruiter-note-name { font-size: 14px; font-weight: 700; }
+.recruiter-note-role { font-size: 12px; color: var(--text-muted); }
+
+.recruiter-note-text {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.footer a { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 720px) {
+  .page-wrapper { padding: 16px 12px; }
+  .hero, .candidate-header, .section, .action-row, .intro-block, .compare-section, .card-note { padding-left: 20px; padding-right: 20px; }
+  .fit-grid { grid-template-columns: 1fr; }
+  .bars-grid { grid-template-columns: 1fr; }
+  .candidate-intro { flex-direction: column; text-align: center; }
+  .hero-meta, .candidate-meta { justify-content: center; }
+  .compare-table td, .compare-table th { padding: 10px 8px; font-size: 12px; }
+  .compare-table td:first-child { width: 38%; }
+  .hero-title { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ═══ HERO ═══ -->
+  <div class="hero">
+    <div class="hero-header">
+      <div class="brand-line">
+        <span>Sagan</span>
+        <span class="divider">|</span>
+        <span>Redefining Recruitment</span>
+      </div>
+      <div class="hero-badge">Shortlist · White Glove</div>
+    </div>
+
+    <div class="batch-stamp">
+      <span class="batch-dot"></span>
+      Batch 1 · April 29, 2026
+    </div>
+
+    <div class="hero-title">FP&amp;A Analyst · Mining &amp; Energy Focus</div>
+    <div class="hero-subtitle">Two senior LATAM finance candidates with deep mining-sector operating experience.</div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Target Range</div>
+        <div class="hero-meta-value">$3,500 - $4,000 USD/mo</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Sector Priority</div>
+        <div class="hero-meta-value">Mining / Energy / Resources</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Role Type</div>
+        <div class="hero-meta-value">Full-Time · Remote Contractor</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Region</div>
+        <div class="hero-meta-value">LATAM · UTC-5</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ROLE CONTEXT ═══ -->
+  <div class="intro-block">
+    <div class="intro-block-label">The Role</div>
+    <div class="intro-block-text">
+      Senior FP&amp;A analyst seat for a lean, data-intensive finance team with mining and energy exposure. The work centers on financial modeling, cash flow forecasting, variance analysis, and reporting automation. Strong Excel and Power BI are required. Alteryx is strongly preferred. The right candidate translates numbers into operating decisions, partners with non-finance stakeholders, and drives process improvement rather than just executing tasks. Mining or energy sector finance experience is the differentiator.
+    </div>
+  </div>
+
+  <!-- ═══ COMPARISON TABLE ═══ -->
+  <div class="compare-section">
+    <div class="compare-title">Head-to-Head</div>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="lead">Monica 🇨🇴</th>
+          <th>Luis 🇨🇴</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Target Monthly Rate (USD)</td><td><strong>$3,800</strong> (within range)</td><td><strong>$4,000</strong> (top of range)</td></tr>
+        <tr><td>Years of Finance Experience</td><td>10+ years FP&amp;A / Financial Control</td><td>20+ years progressive finance leadership</td></tr>
+        <tr><td>Seniority Profile</td><td>Senior Analyst / Coordinator</td><td>Director / CFO background</td></tr>
+        <tr><td>Mining &amp; Energy Sector</td><td><span class="check-mark">✓</span> Mining + fuels (10+ yrs)</td><td><span class="check-mark">✓</span> Coal mining (10 yrs) + Gold mining</td></tr>
+        <tr><td>Financial Modeling</td><td><span class="check-mark">✓</span> Strong, hands-on builder</td><td><span class="check-mark">✓</span> 3-statement modeling</td></tr>
+        <tr><td>Cash Flow Forecasting</td><td><span class="check-mark">✓</span> 13-week forecasts owned end-to-end</td><td><span class="check-mark">✓</span> Cash flow forecasting at the leadership level</td></tr>
+        <tr><td>Variance Analysis</td><td><span class="check-mark">✓</span> Bridge analysis: volume / price / efficiency</td><td><span class="warn-mark">◐</span> Conceptually sound, less precise in answers</td></tr>
+        <tr><td>Power BI / Dashboards</td><td><span class="check-mark">✓</span> Daily-driver, ships dashboards</td><td><span class="warn-mark">◐</span> Developing</td></tr>
+        <tr><td>Alteryx (preferred)</td><td><span class="x-mark">—</span> Not yet</td><td><span class="x-mark">—</span> Not yet</td></tr>
+        <tr><td>ERP Systems</td><td><span class="warn-mark">◐</span> Excel-first; ERP exposure not detailed</td><td><span class="check-mark">✓</span> SAP, Oracle</td></tr>
+        <tr><td>IFRS / Accounting Standards</td><td><span class="check-mark">✓</span> Implicit, finance control role</td><td><span class="check-mark">✓</span> Explicit IFRS expertise</td></tr>
+        <tr><td>Stakeholder Translation</td><td><span class="check-mark">✓</span> Worked with ops on cost efficiency</td><td><span class="check-mark">✓</span> Executive-level partnering</td></tr>
+        <tr><td>Time Zone vs US Eastern</td><td><span class="check-mark">✓</span> UTC-5 (full overlap)</td><td><span class="check-mark">✓</span> UTC-5 (full overlap)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ MONICA CANDIDATE CARD ═══ -->
+  <div class="candidate-card">
+    <div class="candidate-header">
+      <div class="candidate-rank lead">⭐ Lead Candidate</div>
+      <div class="candidate-intro">
+        <div class="candidate-avatar">M</div>
+        <div>
+          <div class="candidate-name">Monica</div>
+          <div class="candidate-title">Senior FP&amp;A / Financial Control · Colombia</div>
+        </div>
+      </div>
+      <div class="candidate-meta">
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="candidate-meta-value">Colombia</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          <span class="candidate-meta-value">10+ Years Mining &amp; Fuels FP&amp;A</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          <span class="candidate-meta-value">$3,800 USD/mo (target)</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="candidate-meta-value">UTC-5 · Full ET Overlap</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="candidate-body">
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Recruiter's Take
+        </div>
+        <div class="narrative">
+          Monica brings over 10 years of FP&amp;A and financial control experience from the mining and fuels sector in Colombia. She is currently Financial Control Coordinator at a mining and fuels operator, where she manages budgeting, forecasting, and cash flow planning across multiple entities. She demonstrates strong technical capabilities in building financial models, creating Power BI dashboards, and managing 13-week cash flow forecasts, with notable achievements including a 55% tax burden reduction and the implementation of automated reporting systems. Her variance analysis approach uses structured bridge analysis to isolate drivers by volume, price, and operational efficiency, though her explanations remain somewhat textbook. Her data cleanup and automation work relies on Excel Power Query and Power BI. She does not yet have Alteryx exposure, which is preferred for this role. She translates financial insights for non-finance stakeholders effectively, evidenced by her work with operations teams on cost-efficiency improvements. At a current compensation of $2,800 monthly with a target of $3,800, she sits within the lower end of the $3,500-$4,000 range and appears motivated to step into a more strategic, data-driven environment where her FP&amp;A skills can drive decision-making at scale.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Why Monica
+        </div>
+        <ul class="why-list">
+          <li class="why-item"><div class="why-dot"></div><span><strong>10+ years inside mining &amp; fuels.</strong> Direct sector match. Not transferable-skills logic. Real operating exposure to the kinds of finance questions resource-heavy businesses ask.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>Owns the 13-week cash flow forecast.</strong> End-to-end, multi-entity, in production today. The exact muscle this role needs from day one.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>55% tax burden reduction.</strong> Concrete bottom-line impact. Translates to: she finds money the company didn't know it had.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>Power BI as a daily driver.</strong> Builds dashboards that operating teams actually use. Already implements automated reporting in her current seat.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>Variance analysis with structure.</strong> Bridge analysis isolating volume, price, and operational efficiency. Frameworks-driven, not intuition-led.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>At target rate.</strong> $3,800 sits squarely in the $3,500-$4,000 band, with room to invest in upskilling toward Alteryx.</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Fit for This Role
+        </div>
+        <div class="fit-grid">
+          <div class="fit-card">
+            <div class="fit-card-label">Sector Fit</div>
+            <div class="fit-card-value">A decade of mining and fuels finance. The vocabulary, the cycles, the operating realities are second nature.</div>
+          </div>
+          <div class="fit-card">
+            <div class="fit-card-label">Tooling Match</div>
+            <div class="fit-card-value">Excel Power Query + Power BI in daily use. Closest in-batch match on the core technical stack the role requires.</div>
+          </div>
+          <div class="fit-card">
+            <div class="fit-card-label">Trajectory</div>
+            <div class="fit-card-value">Stepping up from Coordinator into a more strategic seat. Hungry, mid-career, motivated to grow into more scope.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          Strength Profile
+        </div>
+        <div class="bars-grid">
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">FP&amp;A &amp; Financial Modeling</span><span class="bar-score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Cash Flow Forecasting (13-wk)</span><span class="bar-score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Power BI / Dashboards</span><span class="bar-score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Variance Analysis</span><span class="bar-score">82</span></div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Mining / Energy Domain</span><span class="bar-score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Alteryx</span><span class="bar-score">20</span></div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          Platforms &amp; Tools
+        </div>
+        <div class="tools-cluster">
+          <span class="tool-tag highlight">Excel (advanced)</span>
+          <span class="tool-tag highlight">Excel Power Query</span>
+          <span class="tool-tag highlight">Power BI</span>
+          <span class="tool-tag highlight">Financial Modeling</span>
+          <span class="tool-tag highlight">13-Week Cash Flow</span>
+          <span class="tool-tag">Budgeting</span>
+          <span class="tool-tag">Forecasting</span>
+          <span class="tool-tag">Variance / Bridge Analysis</span>
+          <span class="tool-tag">Automated Reporting</span>
+          <span class="tool-tag">Tax Optimization</span>
+          <span class="tool-tag">Multi-Entity Consolidation</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          Experience Highlights
+        </div>
+        <div class="exp-list">
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">Financial Control Coordinator</div>
+              <div class="exp-company">Mining &amp; Fuels Operator (Colombia) · Current</div>
+              <div class="exp-desc">Manages budgeting, forecasting, and cash flow planning across multiple entities. Owns the 13-week cash flow forecast end-to-end. Built Power BI dashboards used by operating teams. Implemented automated reporting systems and drove a 55% reduction in tax burden through optimization work.</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">Senior FP&amp;A Analyst</div>
+              <div class="exp-company">Mining / Fuels Sector · Prior Roles</div>
+              <div class="exp-desc">Earlier 10-year track building financial models, partnering with operations on cost-efficiency improvements, running variance analysis using bridge analysis to isolate drivers by volume, price, and operational efficiency.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="action-row">
+      <a class="action-btn primary" href="https://candidate-video.com/uploads/9c91e065-511d-402d-8991-3fd8c55086ad" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Watch Intro Video
+      </a>
+    </div>
+
+    <div class="card-note">
+      <div class="card-note-label">Recruiter Note</div>
+      <div class="card-note-text">
+        Monica is the cleanest fit on paper for a sector-first hire. A decade in mining and fuels, hands-on Power BI, real cash-flow ownership, and a measurable tax win on her record. Her variance analysis answers were textbook-correct rather than insight-led, so expect her best work to come once she sees a few cycles inside the business. The Alteryx gap is real but coachable. At $3,800 she leaves room in the band to invest in upskilling. Recommend leading with her.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ LUIS CANDIDATE CARD ═══ -->
+  <div class="candidate-card">
+    <div class="candidate-header">
+      <div class="candidate-rank">Senior Alternative</div>
+      <div class="candidate-intro">
+        <div class="candidate-avatar">L</div>
+        <div>
+          <div class="candidate-name">Luis</div>
+          <div class="candidate-title">Finance Director / CFO Background · Colombia</div>
+        </div>
+      </div>
+      <div class="candidate-meta">
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="candidate-meta-value">Colombia</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          <span class="candidate-meta-value">20+ Years Finance Leadership</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          <span class="candidate-meta-value">$4,000 USD/mo (target)</span>
+        </div>
+        <div class="candidate-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="candidate-meta-value">UTC-5 · Full ET Overlap</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="candidate-body">
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Recruiter's Take
+        </div>
+        <div class="narrative">
+          Luis brings over 20 years of progressive finance leadership across manufacturing, mining, and BPO sectors in Latin America, having served as Finance Director and CFO for both national and multinational organizations. His technical foundation is strong, with demonstrated expertise in IFRS accounting, 3-statement modeling, cash flow forecasting, and financial planning processes including budget development, variance analysis, and monthly business reviews. He has meaningful experience in operationally complex environments, including a decade in coal mining at a major operator, gold mining at a multinational, and current FP&amp;A management at a multi-geography BPO operation, where he has worked closely with executives on strategic decisions and profitability optimization. Luis shows solid competency with financial tools and ERP systems (SAP, Oracle), though his responses suggest his Power BI and automation experience may be more developing than the advanced level this role requires. His communication is clear and he understands core FP&amp;A concepts like variance decomposition and cash reconciliation, but his answers lack the precision and depth expected for a senior analyst driving process improvement in a lean, data-intensive environment. At his $4,000 monthly compensation expectation, he represents an experienced finance generalist who could contribute meaningfully but may need support building the advanced reporting automation and analytical rigor the position demands.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Why Luis
+        </div>
+        <ul class="why-list">
+          <li class="why-item"><div class="why-dot"></div><span><strong>20+ years across mining, manufacturing, and BPO.</strong> Director and CFO seats for both national and multinational organizations. Has actually run finance functions, not just contributed to them.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>A decade in coal mining at a major operator.</strong> Plus gold mining experience. The deepest mining-specific track in this batch.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>Strong on the accounting and modeling foundation.</strong> IFRS, 3-statement modeling, cash flow forecasting, variance analysis, monthly business reviews. The fundamentals are airtight.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>ERP fluency.</strong> SAP and Oracle in production environments. Has worked inside the systems that mid-market and enterprise finance teams actually run on.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>Executive partnering.</strong> Used to working with C-suite on strategic decisions and profitability optimization. Comfortable in the room when the conversation gets sharper.</span></li>
+          <li class="why-item"><div class="why-dot"></div><span><strong>At $4,000.</strong> Top of the band, but priced consistent with his seniority and sector depth.</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Fit for This Role
+        </div>
+        <div class="fit-grid">
+          <div class="fit-card">
+            <div class="fit-card-label">Sector Depth</div>
+            <div class="fit-card-value">10 years coal + gold mining at major operators. The deepest mining-finance track on the slate.</div>
+          </div>
+          <div class="fit-card">
+            <div class="fit-card-label">Accounting Foundation</div>
+            <div class="fit-card-value">IFRS, 3-statement modeling, cash flow, variance, monthly business reviews. Senior fundamentals, no gaps.</div>
+          </div>
+          <div class="fit-card">
+            <div class="fit-card-label">Watch-Out</div>
+            <div class="fit-card-value">Power BI and automation are more developing than advanced. Will need ramp-up time on the data-engineering side of the seat.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          Strength Profile
+        </div>
+        <div class="bars-grid">
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">IFRS / Accounting Standards</span><span class="bar-score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">3-Statement &amp; FP&amp;A Modeling</span><span class="bar-score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Mining / Energy Domain</span><span class="bar-score">96</span></div><div class="bar-track"><div class="bar-fill" style="width:96%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">ERP (SAP / Oracle)</span><span class="bar-score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Executive Stakeholder Work</span><span class="bar-score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+          <div class="bar-item"><div class="bar-top"><span class="bar-label">Power BI / Automation</span><span class="bar-score">55</span></div><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          Platforms &amp; Tools
+        </div>
+        <div class="tools-cluster">
+          <span class="tool-tag highlight">SAP</span>
+          <span class="tool-tag highlight">Oracle</span>
+          <span class="tool-tag highlight">IFRS</span>
+          <span class="tool-tag highlight">3-Statement Modeling</span>
+          <span class="tool-tag highlight">Cash Flow Forecasting</span>
+          <span class="tool-tag">Excel (advanced)</span>
+          <span class="tool-tag">Budgeting / Variance</span>
+          <span class="tool-tag">Monthly Business Reviews</span>
+          <span class="tool-tag">Profitability Analysis</span>
+          <span class="tool-tag">Power BI (developing)</span>
+          <span class="tool-tag">Multi-Geography Reporting</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          Experience Highlights
+        </div>
+        <div class="exp-list">
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">FP&amp;A Manager</div>
+              <div class="exp-company">Multi-Geography BPO Operation · Current</div>
+              <div class="exp-desc">Leads FP&amp;A for a multi-country BPO. Partners with executives on strategic decisions and profitability optimization. Owns budget development, variance analysis, monthly business reviews, and cash flow forecasting.</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">Finance Leadership · Gold Mining</div>
+              <div class="exp-company">Multinational Gold Mining Operator · Prior Role</div>
+              <div class="exp-desc">Senior finance role at a multinational gold mining company. Worked across IFRS accounting, 3-statement modeling, and cash flow planning in a mining-operations environment.</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">Finance Director / CFO · Coal Mining</div>
+              <div class="exp-company">Major Coal Mining Operator · ~10 Years</div>
+              <div class="exp-desc">Roughly a decade in finance leadership at a major coal mining operator. Director and CFO-level responsibilities including IFRS reporting, 3-statement modeling, profitability optimization, and executive partnership.</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot-col"><div class="exp-dot"></div></div>
+            <div>
+              <div class="exp-role">Earlier Finance Roles · Manufacturing</div>
+              <div class="exp-company">Manufacturing Sector · Earlier Career</div>
+              <div class="exp-desc">Progressive finance roles inside manufacturing organizations across LATAM. Foundational experience that fed his later move into resource-heavy industries.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="action-row">
+      <a class="action-btn primary" href="https://candidate-video.com/uploads/675e9841-e9be-4572-8d3a-ffd9a6b843db" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Watch Intro Video
+      </a>
+    </div>
+
+    <div class="card-note">
+      <div class="card-note-label">Recruiter Note</div>
+      <div class="card-note-text">
+        Luis is the seniority play. Twenty years of progressive finance leadership and a deep mining track at the major-operator level make him the most domain-credentialed candidate in this batch. Where he is softer is on the data-engineering edge of the seat. Power BI and automation are developing rather than advanced, and his answers were broader than they were sharp. At $4,000 he is top of band and priced for the level of seniority you would actually be hiring. Best fit if the role leans more toward strategic finance partnering and less toward hands-on dashboard building.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FINAL RECRUITER NOTE ═══ -->
+  <div class="recruiter-note">
+    <div class="recruiter-note-header">
+      <div class="recruiter-note-avatar">JP</div>
+      <div>
+        <div class="recruiter-note-name">Jesus Pacheco</div>
+        <div class="recruiter-note-role">Head of Revenue, Sagan</div>
+      </div>
+    </div>
+    <div class="recruiter-note-text">
+      Here is how I would think about it. Monica is the cleaner technical fit for the day-to-day of this seat: hands-on Power BI, owned cash-flow forecasting, structured variance work, and a decade inside mining and fuels. She is the one who can plug into the modeling and dashboard work without a ramp. Luis is the seniority play. Twenty years across mining, manufacturing, and BPO, IFRS-deep, ERP-fluent, executive-comfortable, but lighter on the modern reporting-automation stack the role wants. If the role is "build and run the FP&amp;A function with strong tooling," lead with Monica. If the role leans toward "be a thought partner to senior leadership, with the technical lift handled around them," Luis is your candidate. Happy to schedule both. Let me know which way the team wants to go.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Prepared by <strong>Jesus Pacheco</strong> · Head of Revenue, Sagan · April 29, 2026<br>
+    <a href="https://getsagan.com">getsagan.com</a> · jesus.p@getsagan.com
+  </div>
+
+</div>
+
+</body>
+</html>
